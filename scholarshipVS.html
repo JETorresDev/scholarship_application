@@ -1,0 +1,44 @@
+<!-- Chapter 4 exercise- page 193
+ date: 4/23/2025
+ author: Jocelynn T.-->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Form</title>
+ </head>
+ <body style="background-color: beige;">
+    <h2 style="text-align: center; color:green">Learning Tree Scholarship Form</h2>
+    <br>
+    <p style="text-indent: 30px; padding-left: 50px; padding-right: 50px;">The Learning Tree Scholarship exemplifies a commitment to fostering the intersection of environmental stewardship and technological innovation. Designed for individuals who share a passion for nature conservation and its applications within the tech industry, the scholarship opens doors to education and opportunities for those striving to make a difference. By supporting students who demonstrate both interest and dedication, the Learning Tree Scholarship ensures the cultivation of future leaders equipped to tackle challenges in sustainability using cutting-edge technology. Their initiative not only provides financial aid but also inspires recipients to build careers that align environmental protection with technological progress. Through this dedication, the scholarship encourages creativity, collaboration, and impactful solutions for preserving our planet. It’s a remarkable avenue for combining two pivotal areas—nature and technology—to drive meaningful change.</p>
+    <p style="text-indent: 30px; padding-left: 50px; padding-right: 50px;"><strong>To apply, candidates are required to submit an essay of 500–700 words describing their dedication to nature conservation and how they envision integrating technology to address environmental challenges. Essays should be original, well-organized, and must include specific examples of past experiences or future goals. Submissions will be evaluated based on creativity, clarity, and alignment with the scholarship's mission.</strong></p>
+    <br>
+    <br>
+    <form action="process_scholarship.php" name="scholarship" method="POST" style="padding-left: 30px;">
+        <label for="first">First Name:</label>
+        <input type="text" name="fName" id="first" autofocus>
+        <br>
+        <br>
+        <label for="last">Last Name:</label>
+        <input type="text" name="lName" id="last">
+        <br>
+        <br>
+        <label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <br>
+        <label for="essay">Essay: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <textarea cols="60" rows="20" name="essay" id="essay" style="font-family: Verdana, Geneva, Tahoma, sans-serif;"></textarea>
+        <br>
+        <br>
+        <p>
+            <a href="">Reset Application</a>
+            <!--<input type="reset" value="Clear Form">-->
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" name="submit" value="Apply Today!"style= "background-color: green; border-radius: 4px; color:white; padding-top: 4px; padding-bottom: 3px">
+        </p>
+    </form>
+ </body>
+ </html>
